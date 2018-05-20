@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome To Ayman AlQoqa Page</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+		body {margin:0;
+			font-family:  "Times New Roman",sans-serif,Arial,Helvetica;
+		}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+  overflow: hidden;
+  letter-spacing: 3px;
+  position: fixed;
+  background-color: #f7f7f7;
+  color: black;
+  
+  top: 0;
+  width: 100%;
+  border-bottom-style: solid;
+  border-width: 0.1px;
+  border-color: #aaa9ab ;
+  box-shadow: 0px 0.5px 10px #828181;
+  margin-bottom: 50px;
+  z-index: 1;
+  
+
+  
+  
+}
+
+.brand{
+	float: left;
+	background-color: #524952;
+	
+	
+	color: white;
+	
+	margin: 10px 0px 10px 15px;
+  display: block;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 30px;
+}
+
+
+.navbar a:hover {
+  background: #ddd;
+  
+  
+}
+
+.main {
+  
+  position: relative;
+  min-height: 800px;
+  margin-top: 50px;
+  padding: 20px 20px;
+
+  
+
+}
+.left{
+	float: left;
+    padding-left: 14px;
+    padding-right: 16px;
+    border-top-width: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: black;
+
+
+
+}
+.right{
+	float: right;
+    padding-left: 14px;
+    padding-right: 16px;
+    border-top-width: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: black;
+
+}
+#home div{
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+
+.title{
+	
+	color: white;
+	text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.title h3{
+	color: black;
+	text-align: center;
+	letter-spacing: 5px;
+	text-shadow: 2px 2px 5px red;
+}
+
+.button {
+    
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+
+
+
+
+    background-color: #b9caef85; 
+
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+.button:hover{
+	background-color: black;
+}
+.button i{
+	margin-right: 5px;
+	
+}
+.main div{
+	float: none;
+	position: relative;
+	margin-top: 20px;
+	
+}
+#projects div, #about div, #contact div{
+	position: static;
+	
+	padding-top: 25px;
+}
+
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+/*
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0px;
+  }
+*/
+
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) 
+{
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    
+    color: white;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 100%;
+    font-size: 4vw;
+}
+
+
+
+.col-100 {
+    float: left;
+    width: 100%;
+    margin-top: 1px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-100, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="navbar" id="myTopnav">
+<i class="brand">AQ</i>	
+  <a class="left" href="#home">Home</a>
+  <a class="right" href="#contact">Contact</a>
+  <a class="right" href="#about">About</a>
+  <a class="right" href="#projects">Projects</a>
+  <a href="javascript:void(0);" class="right icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<header id="home" >
+  <img  src="assets/images/architect.jpg" alt="Architecture" width= 100% height="700">
+  <div class="title">
+  	<h1>Web Development Services</h1>
+  	<h3>Feel Free to dream with No Borders!!!</h3><hr>
+  	<a class="button" href="https://github.com/AymanAlqoqa" target="_blank"><i class="fa fa-github"></i> Github</a>
+  	<a class="button" href="https://www.freecodecamp.org/aymanalqoqa" target="_blank"> <i class="fa fa-free-code-camp"></i>freeCodeCamp</a>
+  	<a class="button" href="https://www.codewars.com/users/AymanAlqoqa" target="_blank"><i class="fa fa-certificate"></i>codeWars</a>
+    
+
+
+  </div>
+  
+</header>
+<div class="main">
+	<!-- Projects-->
+	<div id="projects">
+		<div ><h1>Projects</h1></div>
+	</div><hr>
+	<div style="text-align: center;min-height: 30%;  ">
+		<p style="text-shadow: 1px 1px 2px #b0c1f3, 0 0 25px #d4a2c7, 0 0 5px darkblue; font-size: 20px;
+">UnderConstruction</p>
+	</div>
+
+	<!-- About-->
+	<div id="about">
+		<div ><h1>About</h1></div>
+	</div><hr>
+	<div style=" margin-right:10%;margin-left: 10%;text-align:justify;font-size: 20px;   text-indent: 10px; line-height: 2;">
+		<p3>My purpose for applying to Gaza Code Academy is to both expand on my solid education and to create more opportunities for myself in the future. I wish in particular to be trained at an advanced level in software coding and web designing. In my past duties, I challenged MatLab coding and studied several programming languages beginning from c sharp and not ending with php. 
+My ultimate goal is to become an expert in software development. I believe that advanced training in this program of good quality will realize my dream.
+</p3>
+	</div>
+
+	<!-- Contact-->
+	<div id="contact">
+		<div ><h1>Contact</h1></div>
+	</div><hr>
+	<p style="font-size: 20px;">Lets get in touch and talk about your next project.</p>
+	
+
+	<!-- Form -->
+	<div class="container ">
+  		<form action="">
+    
+      
+		      
+		        <input class="col-100" type="text" id="fname" name="firstname" required placeholder="Name..">
+		      
+		        <input type="text" id="email" name="email" required placeholder="Email..">
+		      	<input type="text" id="Subject" name="Subject" required placeholder="Subject..">
+		      	<input type="text" id="Comment" name="Comment" required placeholder="Comment..">
+		      
+			     <button  type="submit" style="height: 2vw;" disabled>
+			        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+			     </button>
+    
+  		</form>
+	</div>
+	<!-- Google Map -->
+		<div class="w3-container"> <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div></div>
+
+	
+    
+
+</div>
+
+<!-- Footer -->
+<footer style="height: 40px; top:0;argin-bottom: 5px;margin-top: 5px; text-align: center; background-color: #d8d8d8; " >
+  <p style="padding-top: 10px;padding-bottom: 10px;">Powered by <a href="#home" title="Ayman" target="_self" style="text-decoration:none; color: black; ">Ayman AlQoqa</a></p>
+</footer>
+	
+<script>
+function myFunction() {
+
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng( 31.536458, 34.454142);
+  var mapOptions= {
+    center:myCenter,
+    zoom:14, scrollwheel: false, draggable: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY7MjfeAf6yKUumjuVg5rS1Ucsg6qyFK0&callback=myMap"></script>
+</body>
+</html>
